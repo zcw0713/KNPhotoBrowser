@@ -138,7 +138,7 @@ typedef NS_ENUM(NSInteger, KNPhotoShowState) {
 /**
  photoBrowser right top button did click, (you can custom you right button)
  */
-- (void)photoBrowserRightOperationAction;
+- (void)photoBrowserRightOperationAction:(KNPhotoBrowser *)photoBrowser;
 
 @optional
 /**
