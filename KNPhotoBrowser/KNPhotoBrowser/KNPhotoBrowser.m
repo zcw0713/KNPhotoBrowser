@@ -264,13 +264,15 @@
 }
 
 /* init right top Btn */
-- (void)initOperationView{
+- (void)initOperationView {
     UIButton *operationBtn = [UIButton buttonWithType:UIButtonTypeCustom];
-    [operationBtn.layer setCornerRadius:3];
+    [operationBtn.layer setCornerRadius:15];
     [operationBtn.layer setMasksToBounds:true];
-    [operationBtn setBackgroundColor:[UIColor blackColor]];
-    [operationBtn setAlpha:0.4];
-    [operationBtn setBackgroundImage:[UIImage imageNamed:@"KNPhotoBrowser.bundle/more_tap@2x.png"] forState:UIControlStateNormal];
+    [operationBtn setBackgroundColor:[[UIColor blackColor] colorWithAlphaComponent:.4f]];
+    // UIImage *image = [[UIImage imageNamed:@"moments_more"] imageWithRenderingMode:UIImageRenderingModeAlwaysTemplate];
+    UIImage *image = [[UIImage imageNamed: _trashStyleFlag ? @"icon_trash_can_white" : @"moments_more"] imageWithRenderingMode:UIImageRenderingModeAlwaysTemplate];
+    operationBtn.tintColor = UIColor.whiteColor;
+    [operationBtn setImage:image forState:UIControlStateNormal];
     [operationBtn addTarget:self action:@selector(operationBtnIBAction) forControlEvents:UIControlEventTouchUpInside];
     [operationBtn setHidden:!_isNeedRightTopBtn];
     _operationBtn = operationBtn;
