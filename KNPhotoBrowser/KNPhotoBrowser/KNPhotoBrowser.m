@@ -1061,6 +1061,10 @@
     if ([_delegate respondsToSelector:@selector(photoBrowserDeleteSourceSuccessWithAbsoluteIndex:)]) {
         [_delegate photoBrowserDeleteSourceSuccessWithAbsoluteIndex:[_tempArr indexOfObject:item]];
     }
+    
+    if ([_delegate respondsToSelector:@selector(photoBrowserDeleteSourceSuccessWithRelativeIndex:photoBrowser:)]) {
+        [_delegate photoBrowserDeleteSourceSuccessWithRelativeIndex:_currentIndex photoBrowser:self];
+    }
 }
 
 /**
