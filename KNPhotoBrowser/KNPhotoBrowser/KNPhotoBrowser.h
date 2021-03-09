@@ -154,6 +154,8 @@ typedef NS_ENUM(NSInteger, KNPhotoShowState) {
  */
 - (void)photoBrowserDeleteSourceSuccessWithRelativeIndex:(NSInteger)index;
 
+- (void)photoBrowserDeleteSourceSuccessWithRelativeIndex:(NSInteger)index photoBrowser:(nonnull KNPhotoBrowser *)photoBrowser;
+
 @optional
 /**
  photoBrowser delete image success with absolute index
