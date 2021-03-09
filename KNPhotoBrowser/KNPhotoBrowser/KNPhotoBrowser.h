@@ -213,6 +213,8 @@ typedef NS_ENUM(NSInteger, KNPhotoShowState) {
 
 @interface KNPhotoBrowser : UIViewController
 
+@property (nonatomic, assign) BOOL trashStyleFlag;     // 右上角按钮. yes: 删除按钮; no: 3个点
+
 /**
  current select index
  */
