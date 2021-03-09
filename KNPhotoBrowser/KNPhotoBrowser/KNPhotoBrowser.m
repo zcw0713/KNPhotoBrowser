@@ -270,7 +270,7 @@
     [operationBtn.layer setMasksToBounds:true];
     [operationBtn setBackgroundColor:[[UIColor blackColor] colorWithAlphaComponent:.4f]];
     // UIImage *image = [[UIImage imageNamed:@"moments_more"] imageWithRenderingMode:UIImageRenderingModeAlwaysTemplate];
-    UIImage *image = [[UIImage imageNamed: _trashStyleFlag ? @"icon_trash_can_white" : @"moments_more"] imageWithRenderingMode:UIImageRenderingModeAlwaysTemplate];
+    UIImage *image = [[UIImage imageNamed: _showTrashButton ? @"icon_trash_can_white" : @"moments_more"] imageWithRenderingMode:UIImageRenderingModeAlwaysTemplate];
     operationBtn.tintColor = UIColor.whiteColor;
     [operationBtn setImage:image forState:UIControlStateNormal];
     [operationBtn addTarget:self action:@selector(operationBtnIBAction) forControlEvents:UIControlEventTouchUpInside];
