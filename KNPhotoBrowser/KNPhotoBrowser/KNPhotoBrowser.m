@@ -947,8 +947,8 @@
  right top Btn Did click
  */
 - (void)operationBtnIBAction{
-    if ([_delegate respondsToSelector:@selector(photoBrowserRightOperationAction)]) {
-        [_delegate photoBrowserRightOperationAction];
+    if ([_delegate respondsToSelector:@selector(photoBrowserRightOperationAction:)]) {
+        [_delegate photoBrowserRightOperationAction:self];
     }
 }
 
