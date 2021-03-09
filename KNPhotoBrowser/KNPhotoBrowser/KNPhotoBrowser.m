@@ -619,14 +619,14 @@
     }
     
     // if customView on photoBrowser, them must be show
-    for (UIView *subView in self.followArr) {
-        [subView setAlpha:1];
-    }
+//     for (UIView *subView in self.followArr) {
+//         [subView setAlpha:1];
+//     }
     
     UIImageView *tempView = [[UIImageView alloc] init];
-    tempView.clipsToBounds = true;
-    tempView.layer.cornerRadius = 0.01;
-    tempView.contentMode = self.animatedMode;
+//     tempView.clipsToBounds = true;
+//     tempView.layer.cornerRadius = 0.01;
+//     tempView.contentMode = self.animatedMode;
     
     KNPhotoItems *items = _itemsArr[_currentIndex];
     
